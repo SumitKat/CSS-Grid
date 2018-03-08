@@ -1,0 +1,21 @@
+.Grid_container{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	background-color: black;
+	padding: 10px;
+	/*justify-content:space-around;*/
+	align-content: start;
+}
+.Grid_container > div{
+	background: blue;
+	text-align: center;
+	border: 10px solid black;
+	font-size: 30px;
+	padding: 20px;
+}
+/*.item1{
+	grid-column: 1/ span 3;
+}*/
+.item1{
+	grid-area: 1/ 2/ 5/ 6;
+}

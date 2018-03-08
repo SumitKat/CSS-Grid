@@ -1,0 +1,32 @@
+.container{
+	display: grid;
+	background: rgba(0,0,250,0.6);
+	padding: 10px;
+	grid-gap: 10px;
+	grid-template-areas: 'header header header header header'
+	 					  'nav nav menu menu menu'
+	 					  'nav nav content content content'
+	  						'footer footer footer footer footer ';
+}
+.container > div
+{
+	border: 10px solid black;
+	padding: 20px;
+	background-color: blue;
+	text-align: center;
+}
+.item1{
+	grid-area: header;
+}
+.item5{
+	grid-area: footer;
+}
+.item2{
+	grid-area: nav;
+}
+.item3{
+	grid-area: menu;
+}
+.item4{
+	grid-area: content;
+}
